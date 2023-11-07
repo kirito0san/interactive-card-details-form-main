@@ -1,0 +1,210 @@
+* {
+  font-family: "Space Grotesk", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+  height: 100vh;
+  font-size: 18px;
+  position: relative;
+}
+main {
+  display: flex;
+  justify-content: flex-start;
+}
+/* cards */
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(./images/bg-main-desktop.png);
+  background-repeat: no-repeat;
+  width: 59%;
+  height: 100vh;
+}
+@media screen and (max-width: 1200px) {
+  body {
+    height: auto;
+    overflow: visible;
+  }
+  main {
+    flex-direction: column;
+  }
+  .cards {
+    margin: 0 0 80px 0;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    background-image: url(./images/bg-main-mobile.png);
+  }
+  .cards .cardTwo {
+    top: 2%;
+    left: 50%;
+    transform: translateX(-46%) scale(0.9);
+    -webkit-transform: translateX(-46%) scale(0.9);
+    -moz-transform: translateX(-46%) scale(0.9);
+    -ms-transform: translateX(-46%) scale(0.9);
+    -o-transform: translateX(-46%) scale(0.9);
+  }
+  .cards .cardOne {
+    left: 50%;
+    top: 30%;
+    z-index: 33;
+    transform: translateX(-55%) scale(0.9);
+    -webkit-transform: translateX(-55%) scale(0.9);
+    -moz-transform: translateX(-55%) scale(0.9);
+    -ms-transform: translateX(-55%) scale(0.9);
+    -o-transform: translateX(-55%) scale(0.9);
+  }
+  main .form {
+    width: 100%;
+    padding: 0 30px;
+  }
+  main .send {
+    width: 100%;
+    padding: 0 30px;
+  }
+}
+
+.cardOne {
+  color: white;
+  position: relative;
+  left: 34%;
+  top: -16%;
+  display: flex;
+  padding: 20px;
+  gap: 10px;
+  border-radius: 10px;
+  width: 330px;
+  height: 185px;
+  background-repeat: no-repeat;
+  background-image: url(./images/bg-card-front.png);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.img1 {
+  padding-bottom: 27px;
+}
+.cardTwo {
+  padding: 10px;
+  border-radius: 10px;
+  width: 330px;
+  height: 167px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(./images/bg-card-front.png);
+  background-image: url(./images/bg-card-back.png);
+  position: absolute;
+  top: 50%;
+  left: 22%;
+}
+.cardTwo > p {
+  position: absolute;
+  top: 72px;
+  width: fit-content;
+  right: 39px;
+  color: white;
+}
+
+.bgmain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.sname {
+  width: 100%;
+  letter-spacing: 4px;
+}
+.name {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form {
+  gap: 25px;
+  /* padding: 63px; */
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+input {
+  width: 100%;
+  border: 1px solid #eee;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+input:focus {
+  outline: 0;
+  border: 2px solid hsl(278, 81%, 54%);
+}
+button {
+  color: white;
+  letter-spacing: 2px;
+  background-color: hsl(278, 68%, 11%);
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+}
+button:active {
+  -webkit-tap-highlight-color: transparent;
+  background-color: hsla(278, 68%, 11%, 0.295);
+}
+
+label {
+  position: relative;
+  height: 72px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.painp {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+.inp {
+  width: 80%;
+}
+.send {
+  display: none;
+  padding-left: 20px;
+  width: 35%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.send img {
+  position: relative;
+  bottom: 18px;
+}
+.send h1 {
+  font-size: x-large;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+.send p {
+  color: hsl(279, 6%, 55%);
+}
+.send button {
+  position: relative;
+  bottom: -31px;
+  align-self: stretch;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive card details form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css.css" />
+  </head>
+  <body>
+    <main>
+      <!-- <img class="bgmain" src="./images/bg-main-desktop.png" alt="" /> -->
+      <div class="cards">
+        <div class="cardOne">
+          <img class="img1" src="./images/card-logo.svg" alt="" />
+          <p class="sname Mcard">0000 0000 0000 0000</p>
+          <div class="name">
+            <p class="MName">Jane Appleseed</p>
+            <p class="Mdate">00/00</p>
+          </div>
+        </div>
+        <div class="cardTwo"><p class="Mcvc">000</p></div>
+      </div>
+      <div class="form">
+        <label for="">
+          <p>Cardholder Name</p>
+          <input
+            maxlength="20"
+            id="name"
+            type="text"
+            placeholder="e.g. Jane Appleseed"
+          />
+          <p class="one"></p>
+        </label>
+        <label for="">
+          <p>Card Number</p>
+          <input
+            id="CardN"
+            maxlength="16"
+            type="text"
+            placeholder="e.g. 1234 5678 9123 0000"
+          />
+          <p class="one"></p>
+        </label>
+        <div class="painp">
+          <label for="">
+            <p>Exp. Date (MM/YY)</p>
+            <div class="painp mmyy">
+              <div>
+                <input
+                  id="inpM"
+                  maxlength="2"
+                  class="inp"
+                  type="text"
+                  placeholder="MM"
+                />
+                <p class="one two"></p>
+              </div>
+              <div>
+                <input
+                  id="inpY"
+                  max="12"
+                  maxlength="2"
+                  class="inp"
+                  type="text"
+                  placeholder="YY"
+                />
+                <p class="one"></p>
+              </div>
+            </div>
+          </label>
+          <label for="">
+            cvc
+            <input
+              id="cvc"
+              maxlength="3"
+              type="text"
+              placeholder="CVC e.g. 123"
+            />
+            <p class="one"></p>
+          </label>
+        </div>
+        <button>Confirm</button>
+      </div>
+      <div class="send">
+        <img src="./images/icon-complete.svg" alt="" />
+        <h1>Thank you!</h1>
+        <p class="op-5">We've added your card details</p>
+        <button>Continue</button>
+      </div>
+
+      <!-- Completed state start -->
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <script src="js.js"></script>
+  </body>
+</html>
