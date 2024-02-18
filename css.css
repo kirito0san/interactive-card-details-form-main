@@ -21,6 +21,7 @@ main {
   justify-content: center;
   background-image: url(./images/bg-main-desktop.png);
   background-repeat: no-repeat;
+   background-size: contain;
   width: 59%;
   height: 100vh;
 }
